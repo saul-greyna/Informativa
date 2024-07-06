@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calzando Con Estilo</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <nav>
+        <button class="menu-toggle">
+            <img src="images/boton.png" alt="Menu">
+        </button>
+        <ul class="menu">
+            <li class="dropdown">
+                <a href="#">Inicio</a>
+            </li>
+            <li class="dropdown">
+                <a href="#">Productos</a>
+            </li>
+            <li class="dropdown">
+                <a href="#">Marcas</a>
+            </li>
+            <li class="dropdown">
+                <a href="#">Ofertas</a>
+            </li>
+            <li class="dropdown">
+                <a href="#">Tendencias</a>
+            </li>
+        </ul>
+        <img src="images/apple-icon-180x180.png" alt="Logo"> <!-- Cambia esta ruta por la de tu logo -->
+        <input type="text" placeholder="Buscar" class="search-input">
+    </nav>
+    <div class="banner"></div>
+    
+    <section class="products-section">
+        <div class="products-header">
+            <button class="tab active">Novedades</button>
+            <button class="tab">Colecciones</button>
+        </div>
+        <div class="products-grid">
+            <div class="product">
+                <img src="images/product1.jpg" alt="Producto 1">
+                <div class="product-info">
+                    <span class="price">$2,199</span>
+                    <span class="name">Tenis Dime Stan Smith</span>
+                    <span class="category">Originals</span>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/product2.jpg" alt="Producto 2">
+                <div class="product-info">
+                    <span class="price">$2,199</span>
+                    <span class="name">Tenis Dime Stan Smith</span>
+                    <span class="category">Originals</span>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/product3.jpg" alt="Producto 3">
+                <div class="product-info">
+                    <span class="price">$1,099</span>
+                    <span class="name">Sandalias Dime Ayoon</span>
+                    <span class="category">Originals</span>
+                </div>
+            </div>
+            <div class="product">
+                <img src="images/product4.jpg" alt="Producto 4">
+                <div class="product-info">
+                    <span class="price">$1,099</span>
+                    <span class="name">Sandalias Dime Ayoon</span>
+                    <span class="category">Originals</span>
+                </div>
+            </div>
+            <!-- Agrega más productos según sea necesario -->
+        </div>
+    </section>
+    
+    <footer>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/CalzandoConEstiloMx?mibextid=ZbWKwL">
+                <img src="images/fb.png" alt="Facebook" class="icon">
+            </a>
+            <a href="https://www.instagram.com/calzandoconestilomx/">
+                <img src="images/ig.png" alt="Instagram" class="icon">
+            </a>
+        </div>
+        <p class="copyright">© 2024 Calzando Con Estilo</p>
+    </footer>
+
+    <script>
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('.menu').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
