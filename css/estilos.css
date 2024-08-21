@@ -1,7 +1,39 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
     margin: 0;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
 }
+
+html, body {
+    display: grid;
+    height: 80%;
+    place-items: center;
+    background: #000;
+}
+
+.wrapper {
+    max-width: 500px;
+    margin-inline: auto;
+}
+
+img {
+    width: 100%;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    gap: 0.25rem;
+}
+
+.image {
+    flex: 1;
+    aspect-ratio: 1 / 1.5;
+}
+
+
 
 .navegacion {
     background-color: #ccff00;
@@ -9,27 +41,19 @@ body {
 
 }
 
-#logo {
-
-}
-
-
-/* navqq { */
-    align-items: center;
-    background-color: #ccff00; /* Color de fondo del nav */
-    height: 200%;
-    width: 100%;
-}
-
-nav img {
-    height: 40px;
-    margin-right: 20px;
-    
-    
-}
 
 .ubicacion {
     display: flex;
+}
+
+#ubicacion {
+    font-size: 500%;
+    text-align: center;
+}
+
+#mapa {
+    width: 100%;
+    height: 100%;
 }
 
 .menu-toggle {
@@ -202,10 +226,7 @@ nav ul li a {
     position: relative;
     padding: 100px 
 }
-#mapa {
-    width: 99.8%;
-    height: 300px;
-}
+
 .products-grid {
     grid-template-columns: repeat(3, 1fr); /* Tres columnas */
     max-width: 1000px; /* Ajustar según sea necesario */
