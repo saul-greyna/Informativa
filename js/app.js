@@ -1,3 +1,1 @@
-document.querySelector('.menu-toggle').addEventListener('click', function() {
-document.querySelector('.menu').classList.toggle('show');
-});
+const toggleMenu = () => document.body.classList.toggle("open");

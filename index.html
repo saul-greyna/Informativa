@@ -5,58 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="icono/favicon.ico">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="js/app.js">
     <title>Calzando Con Estilo</title>
 </head>
 <body>
     <header>
-        <nav class="navegacion">
-            <img id="logo" src="icon/apple-icon-120x120.png" alt="Logo">
-            <a href="#banner">Inicio</a>
-            <a href="#novedades">Novedades</a>
-        </nav>
-    </header>
-    <div id="banner">
-        <div class="banner-text">
-            TU DESTINO PARA ENCONTRAR LOS MEJORES TENIS CASUALES
+        <button class="depliegue" onclick="toggleMenu()"></button>
+        <div class="fondo"></div>
+        <div class="menu">
+            <nav>
+                <a style="animation-delay: 0.2s">About</a>
+            </nav>
         </div>
-    </div>
-    <section class="about-section">
-        <div class="about-overlay">
-            <h1>QUIENES SOMOS</h1>
-            <p>Somos una tienda especializada en tenis clon de alta calidad</p>
-            <h2>Contacto</h2>
-            <div class="contact-info">
-                <p>Dirección<br>Salina Cruz #111</p>
-                <p>Teléfono<br>477 820 1964</p>
-            </div>
-        </div>
-    </section>
-    <div class="wrapper">
-        <div class="galeria">
-            <div><img src="images/galeria (1).jpg" alt=""></div>
-            <div><img src="images/galeria (2).jpg" alt=""></div>
-            <div><img src="images/galeria (3).jpg" alt=""></div>
-            <div><img src="images/galeria (4).jpg" alt=""></div>
-            <div><img src="images/galeria (5).jpg" alt=""></div>            
-        </div>
-    </div>
-    <section class="ubicacion">
-        <div>
-            <p id="ubicacion">Conócenos</p>
-            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14892.76321961692!2d-101.58166455!3d21.065040149999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b96330a1a6dc5%3A0x8b30aabeb983c3f8!2sUniversidad%20de%20Guanajuato%2C%20Campus%20Le%C3%B3n!5e0!3m2!1ses-419!20smx!4v1717785170133!5m2!1ses-419!2smx" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </section>
-
-    <footer>
-        <div class="social-icons">
-            <a href="https://www.facebook.com/CalzandoConEstiloMx?mibextid=ZbWKwL">
-                <img src="images/fb.png" alt="Facebook" class="icon">
-            </a>
-            <a href="https://www.instagram.com/calzandoconestilomx/">
-                <img src="images/ig.png" alt="Instagram" class="icon">
-            </a>
-        </div>
-        <p class="copyright">© 2024 Calzando Con Estilo</p>
-    </footer>
+    </header>    
 </body>
 </html>
