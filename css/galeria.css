@@ -71,7 +71,7 @@ img {
 }
 
 .ubicacion {
-    display: inline-table;
+    display: flex;
 }
 
 .fondos {
