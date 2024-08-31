@@ -4,14 +4,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252A;
 }
 
-li, a, button {
+#menu, #link, #button_nav {
     font-family: 'Rubik';
     font-weight: 500;
     font-size: 16px;
-    color: #82837e;
     text-decoration: none;
 }
 
@@ -20,6 +18,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
+    background-color: #bffa37;
 }
 
 .logo {
@@ -43,9 +42,13 @@ header {
     color: #0088a9;
 }
 
+#link {
+    color: #1d1d1b;
+}
+
 button {
     padding: 9px 25px;
-    background-color: rgba(0,136,169,1);
+    background-color: rgba(130,131,126,1.000);
     border: none;
     border-radius: 50px;
     transition: all 0.3 ease 0s;
@@ -53,79 +56,5 @@ button {
 }
 
 button:hover {
-    background-color: rgba(0,136,169,0.8);
-}
-
-
-
-html, body {
-    display: grid;
-    place-items: center;
-    background: #82837e;
-}
-
-.titulos {
-    font-size: 300%;
-    text-align: left;
-    font-family: 'FS Rome Regular';
-    margin-left: 8%;
-}
-
-#texto {
-    text-align: justify;
-    width: 500px;
-    font-size: 24px;
-    margin-left: 8%;
-    border: 5px;
-}
-
-.wrapper {
-    max-width: 1500px;
-    margin-inline: auto;
-}
-
-img {
-    width: 100%;
-}
-
-.galeria {
-    display: flex;
-    justify-content: center;
-    gap: 0.25rem;
-    transform-style: preserve-3d;
-    pointer-events: none;
-}
-
-.image {
-    flex: 1;
-    aspect-ratio: 1 / 1.5;
-    pointer-events: auto;
-    cursor: pointer;
-    -webkit-box-reflect: below 4px linear-gradient(transparent, rgba(130,131,126,1.000));
-    transition: 0.4s;
-}
-
-.image img {
-    aspect-ratio: 1 / 1.5;
-    object-fit: cover;
-    display: block;
-    width: 100%;
-    border-radius: 4px;
-}
-
-.image:hover {
-    transform: scale(1.2);
-}
-
-.galeria:hover > :not(:hover){
-    transform: perspective(480px) rotateY(30deg) scale(0.8);
-    margin-inline: -1.5rem;
-}
-
-.image:hover ~ .image {
-    transform: perspective(480px) rotateY(-30deg) scale(0.8);
-}
-
-.ubicacion {
-    display: grid;
+    background-color: rgba(93,93,93,0.8);
 }
