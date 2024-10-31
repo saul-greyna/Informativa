@@ -105,7 +105,7 @@ img {
     object-fit: cover;
     display: block;
     width: 100%;
-    border-radius: 4px;
+    border-radius: 20px;
 }
 
 .image:hover {
@@ -121,6 +121,17 @@ img {
     transform: perspective(480px) rotateY(-30deg) scale(0.8);
 }
 
+h1 {
+    margin: 25px 25px 25px 25px;
+}
+
 #start {
-    color: var();
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.top {
+    height: 900px;
+    background-color: white;
 }
